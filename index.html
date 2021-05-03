@@ -30,9 +30,21 @@
  
  <body>
    <h1>AbbFel</h1>
-   <h2>professional international</h2>
-  </body>
-   
+   <h2 id="subtitle">professional international</h2>
+
+   <script>
+     var subtitles = ["professional international", "we tried our best", "we have no idea", "incompetent", "help"]
+     
+     function getRandomInt(min, max) {
+       min = Math.ceil(min);
+       max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min);
+     }
+     var number = getRandomInt(1, 5)
+     document.getElementById("subtitle").innerHTML = subtitles[number];
+     
+
+   </script>
    
    
 </body>
